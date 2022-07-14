@@ -2,13 +2,9 @@
 Simple starter repo that acts as a development playground for Elm 0.19.1
 
 ## How to
-```bash
-docker image build -t elm-docker .
-```
-
 ### Windows
 ```bash
-docker container run --rm -v ${pwd}:/app -p 8000:8000 -it elm-docker /bin/ash
+docker container run --rm -v ${pwd}:/app -p 8000:8000 -it kraftdorian/elm:0.19.1-alpine3.16 /bin/ash
 ```
 
 inside container:
